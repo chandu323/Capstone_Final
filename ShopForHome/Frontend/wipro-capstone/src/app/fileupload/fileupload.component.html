@@ -1,0 +1,24 @@
+
+<div class="fileuploading">
+  <p style="font-size:20px;"><strong>Upload your files here</strong></p>
+    <form>
+        <input type="file" name="file" (change)="selectFile($event)">
+        <button type="submit" (click)="onSubmit()">Upload FIle</button>
+    </form>
+</div>
+
+
+
+<div class="dropdown2">
+  <button class="dropbtn2">AdminOperations</button>
+  <div class="dropdown-content2">
+      <a routerLink="/adminusers">Users</a>
+      <a routerLink="/admincrud" >Products</a>
+      <a style="cursor:pointer" (click)="sal()">Sales report</a>
+      <a style="cursor:pointer" (click)="upload()">Upload Stocks</a>
+      <a href="http://localhost:8282/api/csv/download">Get stocks</a>
+      <a routerLink="/newproduct">Update product</a>
+      <a routerLink="/admindiscount">New Coupon</a>
+  </div>
+</div>
+
